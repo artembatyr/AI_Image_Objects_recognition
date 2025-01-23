@@ -11,7 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }
