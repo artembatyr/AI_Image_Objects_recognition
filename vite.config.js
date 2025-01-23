@@ -4,7 +4,10 @@ export default defineConfig({
 	plugins: [
 		
 	],
-	build: {
-		target: 'esnext'
-	  }
+	// build: {
+	// 	target: 'esnext'
+	//   },
+	    optimizeDeps: {
+    exclude: ['@xenova/transformers']
+  }
 })
