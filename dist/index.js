@@ -1,6 +1,5 @@
 import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.8.0'
 
-// Reference the HTML elements that we will need
 const status = document.getElementById('status')
 const image = document.getElementById('image')
 const detectObjectsButton = document.getElementById('detect-objects')
@@ -15,13 +14,6 @@ detectObjectsButton.addEventListener('click', detectAndDrawObjects)
 detectObjectsButton.disabled = false
 status.textContent = 'Ready'
 
-/* ⛳️ CHALLENGE 
-
-Complete this function with the following requirements:
-
-1. The AI Model must be 95% sure of the detected object
-2. The box coordinates must be compatible with the drawObjectBox helper function
-*/
 async function detectAndDrawObjects() {
     // Detect Objects
     status.textContent = 'Detecting...'
@@ -40,7 +32,6 @@ async function detectAndDrawObjects() {
 }
 
 // Helper function that draws boxes for every detected object in the image
-// ⚠️ ️This function requires box coordinates to be in percentages  ️
 function drawObjectBox(detectedObject) {
     const { label, score, box } = detectedObject
     const { xmax, xmin, ymax, ymin } = box
