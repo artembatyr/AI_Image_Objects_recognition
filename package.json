@@ -1,0 +1,17 @@
+{
+  "name": "Scrim-s05rntj",
+  "description": "",
+  "homepage": "https://artembatyr.github.io/AI-Image-Objects-recognition",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
